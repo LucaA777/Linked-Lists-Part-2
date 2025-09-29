@@ -4,15 +4,19 @@
 
 class Student {
  public:
-  Student(const char nName[20], int nID);
+  Student(const char nFName[20], const char nLName[20], int nID, double nGPA);
   ~Student();
 
-  char* getName();
+  char* getFirstName();
+  char* getLastName();
   int getID();
+  double getGPA();
 
  private:
-  char* name;
+  char* firstName;
+  char* lastName;
   int ID;
+  double GPA;
 };
 
 #endif
