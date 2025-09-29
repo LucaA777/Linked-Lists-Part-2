@@ -13,6 +13,8 @@
 #include <iostream>
 #include <cstring>
 #include <cmath>
+//found on: https://www.geeksforgeeks.org/c/rounding-floating-point-number-two-decimal-places-c-c/
+//rounds numbers in console
 #include <bits/stdc++.h>
 #include "Node.h"
 #include "Student.h"
