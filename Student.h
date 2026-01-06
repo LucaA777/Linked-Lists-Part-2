@@ -11,6 +11,7 @@ class Student {
   char* getLastName();
   int getID();
   double getGPA();
+  void print();
 
  private:
   char* firstName;

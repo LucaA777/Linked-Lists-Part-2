@@ -187,6 +187,9 @@ void printStudents(Node* current, Node* &head) {
     cout << current -> getStudent() -> getFirstName() << " " << current -> getStudent() -> getLastName() << ", " << current -> getStudent() -> getID() << ", ";
     cout << fixed << setprecision(2) << current -> getStudent() -> getGPA() << endl;
 
+  }
+
+  if (current -> getNext() != NULL) {
     printStudents(current -> getNext(), head);
   }
 }

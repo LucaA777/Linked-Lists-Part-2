@@ -33,3 +33,6 @@ int Student::getID() {
 double Student::getGPA() {
   return GPA;
 }
+
+void Student::print() {
+}
