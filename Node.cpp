@@ -1,23 +1,40 @@
+/*
+Dylan Waters
+Last updated 1/6/2025
+
+Name : Linked Lists 1
+
+Description : Node implementation to support linked lists for students.
+*/
 #include "Node.h"
 
-Node::Node(Student* nStudent) {
-  student = nStudent;
-  next = NULL;
+// Default constructor
+Node::Node() {
+    this->next = nullptr;
+    student = nullptr;
 }
 
-Node::~Node() {
-  delete student;
-  next = NULL;
+// Constructor that takes student pointer
+Node::Node(Student* student) {
+    this->student = student;
+    this->next = nullptr;
 }
 
-Student* Node::getStudent() {
-  return student;
+// Linked list set next pointer
+void Node::setNext(Node* next) {
+    this->next = next;
 }
 
-void Node::setNext(Node* nNext) {
-  next = nNext;
-}
-
+// Linked list get next pointer
 Node* Node::getNext() {
-  return next;
+    return this->next;
+}
+
+// Print node contents which calls student print
+void Node::print() {
+    if (this->student != nullptr) {
+        this->student->print();
+    } else {
+        cout << "Empty node" << endl;
+    }
 }
