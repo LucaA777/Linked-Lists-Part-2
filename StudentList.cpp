@@ -271,7 +271,6 @@ void printAverageGPA(double sumX, double n, Node* current, Node* &head) {
   if (current -> getNext() == NULL) {
     //print out the average and finish
     double average = sumX / n;
-    cout << average;
     cout << "Average GPA: ";
     cout << fixed << setprecision(2) << average << endl;
   }

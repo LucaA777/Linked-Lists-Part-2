@@ -6,10 +6,8 @@ Node::Node(Student* nStudent) {
 }
 
 Node::~Node() {
-  cout << "---NODE DESTRUCTOR CALLED" << endl;
   delete student;
   next = NULL;
-  cout << "---NODE DESTRUCTOR COMPLETED" << endl;
 }
 
 Student* Node::getStudent() {
